@@ -56,12 +56,59 @@
     <p>&copy; 2024 COREvintage. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript for "Buy Now" Button -->
-  <script>
-    function addToCart(productName) {
-      alert(productName + " added to cart!");
-      // Here you can later implement the logic to update the cart system
+ 
+<script>
+  
+  let cart = [];
+
+
+  function addToCart(productName, price) {
+    
+    cart.push({ name: productName, price: price });
+
+   
+    alert(`${productName} has been added to your cart!`);
+
+ 
+    updateCartCount();
+
+ 
+    console.log("Cart:", cart);
+  }
+
+
+  function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+      cartCountElement.textContent = cart.length; 
     }
-  </script>
+  }
+
+ 
+  function viewCart() {
+    if (cart.length === 0) {
+      alert("Your cart is empty!");
+    } else {
+      let cartDetails = "Your Cart:\n";
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        cartDetails += `${index + 1}. ${item.name} - $${item.price}\n`;
+        total += item.price;
+      });
+
+      cartDetails += `\nTotal: $${total}`;
+      alert(cartDetails);
+    }
+  }
+
+
+  function clearCart() {
+    cart = [];
+    updateCartCount();
+    alert("Your cart has been cleared!");
+  }
+</script>
+
 </body>
 </html>
