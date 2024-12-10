@@ -35,47 +35,47 @@
 
         <!-- Products Grid -->
         <div class="products-grid">
-          <!-- Product Card -->
+          <!-- Product Card 1 -->
           <div class="product-card">
             <img src="images/product1.jpg" alt="Vintage Denim Jacket" class="product-image">
             <h2 class="product-title">Vintage Denim Jacket</h2>
             <p class="product-price">$70</p>
             <div class="product-actions">
               <a href="product-details.html" class="btn">View Details</a>
-              <a href="#" class="btn buy">Buy Now</a>
+              <a href="#" class="btn buy" onclick="addToCart('Vintage Denim Jacket')">Buy Now</a>
             </div>
           </div>
 
-          <!-- Product Card -->
+          <!-- Product Card 2 -->
           <div class="product-card">
             <img src="images/product2.jpg" alt="Retro Floral Dress" class="product-image">
             <h2 class="product-title">Retro Floral Dress</h2>
             <p class="product-price">$55</p>
             <div class="product-actions">
               <a href="product-details.html" class="btn">View Details</a>
-              <a href="#" class="btn buy">Buy Now</a>
+              <a href="#" class="btn buy" onclick="addToCart('Retro Floral Dress')">Buy Now</a>
             </div>
           </div>
 
-          <!-- Product Card -->
+          <!-- Product Card 3 -->
           <div class="product-card">
             <img src="images/product3.jpg" alt="Classic Leather Bag" class="product-image">
             <h2 class="product-title">Classic Leather Bag</h2>
             <p class="product-price">$120</p>
             <div class="product-actions">
               <a href="product-details.html" class="btn">View Details</a>
-              <a href="#" class="btn buy">Buy Now</a>
+              <a href="#" class="btn buy" onclick="addToCart('Classic Leather Bag')">Buy Now</a>
             </div>
           </div>
 
-          <!-- Product Card -->
+          <!-- Product Card 4 -->
           <div class="product-card">
             <img src="images/product4.jpg" alt="Vintage Sunglasses" class="product-image">
             <h2 class="product-title">Vintage Sunglasses</h2>
             <p class="product-price">$35</p>
             <div class="product-actions">
               <a href="product-details.html" class="btn">View Details</a>
-              <a href="#" class="btn buy">Buy Now</a>
+              <a href="#" class="btn buy" onclick="addToCart('Vintage Sunglasses')">Buy Now</a>
             </div>
           </div>
         </div>
@@ -89,5 +89,13 @@
       <p>&copy; 2024 COREvintage. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for "Buy Now" Button -->
+  <script>
+    function addToCart(productName) {
+      alert(productName + " has been added to your cart!");
+      // Later, you can add further logic here to actually manage the cart
+    }
+  </script>
 </body>
 </html>
