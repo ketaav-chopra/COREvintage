@@ -3,29 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Details - COREvintage</title>
+  <meta name="description" content="Discover our complete collection of exclusive vintage fashion at COREvintage. High-quality, timeless styles just for you.">
+  <meta name="keywords" content="COREvintage, vintage products, fashion collection, timeless style, shop vintage">
+  <meta name="author" content="COREvintage">
+  <title>Products - COREvintage</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">COREvintage</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="shop.html">Shop</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">COREvintage</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <!-- Main Content -->
   <main>
-    <section class="product-details">
-      <h1>Product Name</h1>
-      <p>Description: This is a detailed description of the product.</p>
-      <p>Price: $50</p>
-      <a href="#" class="btn buy">Buy Now</a>
+    <section class="products-section">
+      <div class="container">
+        <h1 class="section-title">Our Products</h1>
+        <p class="section-description">Explore our handpicked selection of vintage products designed to elevate your style sustainably.</p>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Product Card -->
+          <div class="product-card">
+            <img src="images/product1.jpg" alt="Vintage Denim Jacket" class="product-image">
+            <h2 class="product-title">Vintage Denim Jacket</h2>
+            <p class="product-price">$70</p>
+            <div class="product-actions">
+              <a href="product-details.html" class="btn">View Details</a>
+              <a href="#" class="btn buy">Buy Now</a>
+            </div>
+          </div>
+
+          <!-- Product Card -->
+          <div class="product-card">
+            <img src="images/product2.jpg" alt="Retro Floral Dress" class="product-image">
+            <h2 class="product-title">Retro Floral Dress</h2>
+            <p class="product-price">$55</p>
+            <div class="product-actions">
+              <a href="product-details.html" class="btn">View Details</a>
+              <a href="#" class="btn buy">Buy Now</a>
+            </div>
+          </div>
+
+          <!-- Product Card -->
+          <div class="product-card">
+            <img src="images/product3.jpg" alt="Classic Leather Bag" class="product-image">
+            <h2 class="product-title">Classic Leather Bag</h2>
+            <p class="product-price">$120</p>
+            <div class="product-actions">
+              <a href="product-details.html" class="btn">View Details</a>
+              <a href="#" class="btn buy">Buy Now</a>
+            </div>
+          </div>
+
+          <!-- Product Card -->
+          <div class="product-card">
+            <img src="images/product4.jpg" alt="Vintage Sunglasses" class="product-image">
+            <h2 class="product-title">Vintage Sunglasses</h2>
+            <p class="product-price">$35</p>
+            <div class="product-actions">
+              <a href="product-details.html" class="btn">View Details</a>
+              <a href="#" class="btn buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 COREvintage. All rights reserved.</p>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 COREvintage. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
